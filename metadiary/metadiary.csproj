@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PublishAot>false</PublishAot>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <StartupObject>Metadiary.App</StartupObject>
+
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CommandDotNet" Version="7.0.4" />
+        <PackageReference Include="MetadataExtractor" Version="2.8.1" />
+    </ItemGroup>
+
+</Project>
