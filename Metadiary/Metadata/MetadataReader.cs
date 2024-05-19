@@ -14,4 +14,6 @@ public class MetadataReader(string filename) : IMetadataReader
         foreach (string? tag in directories.SelectMany(d => d.Tags, (_, tag) => tag.Name))
             Console.WriteLine(tag);
     }
+
+    public static MediaType GetMediaType(string mediaType) => MediaType.FromName(mediaType);
 }
