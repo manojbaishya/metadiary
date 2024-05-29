@@ -2,15 +2,20 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
+        <StartupObject>Metadiary.App</StartupObject>
         <TargetFramework>net8.0</TargetFramework>
-        <ImplicitUsings>disable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-        <PublishAot>false</PublishAot>
-        <InvariantGlobalization>true</InvariantGlobalization>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-        <StartupObject>Metadiary.App</StartupObject>
+        <PublishAot>false</PublishAot>
+    </PropertyGroup>
 
+    <PropertyGroup>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <InvariantGlobalization>true</InvariantGlobalization>
     </PropertyGroup>
 
     <ItemGroup>
