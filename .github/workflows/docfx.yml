@@ -1,7 +1,9 @@
 # Your GitHub workflow file under .github/workflows/
 # Trigger the action on push to main
 on:
-  push:
+  pull_request:
+    types:
+      - closed
     branches:
       - main
 
@@ -19,6 +21,7 @@ concurrency:
   
 jobs:
   publish-docs:
+    if: github.event.pull_request.merged
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
