@@ -24,7 +24,6 @@ concurrency:
   
 jobs:
   publish-docs:
-    if: github.event.pull_request.merged
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
