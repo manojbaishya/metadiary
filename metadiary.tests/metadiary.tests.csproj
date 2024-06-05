@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Metadiary\metadiary.csproj" />
+        <ProjectReference Include="..\metadiary\metadiary.csproj" />
     </ItemGroup>
 
     <ItemGroup>
